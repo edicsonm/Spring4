@@ -25,7 +25,7 @@ import javax.validation.Valid;
 public class AdminController {
 
     @Autowired
-    @Qualifier(value = "userRepository")
+//    @Qualifier(value = "userRepository")
     UserRepository userRepository;
 
     @RequestMapping(value = {"user/register"}, method = RequestMethod.GET)

@@ -20,10 +20,10 @@
 
     <!--<link href="public/favicon.ico" rel="icon" type="image/x-icon" />-->
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="<c:url value="/css/bootstrap.css"/>">
-    <link rel="stylesheet" href="<c:url value="/css/bootstrap-theme.css"/>">
-    <link rel="stylesheet" href="<c:url value="/css/jumbotron-narrow.css"/>">
-    <link rel="stylesheet" href="<c:url value="/css/appStyle.css"/>">
+    <link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.css"/>">
+    <link rel="stylesheet" href="<c:url value="/resources/css/bootstrap-theme.css"/>">
+    <link rel="stylesheet" href="<c:url value="/resources/css/jumbotron-narrow.css"/>">
+    <link rel="stylesheet" href="<c:url value="/resources/css/appStyle.css"/>">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
     <!--<link href="public/stylesheets/sticky-footer.css" rel="stylesheet">-->
 
@@ -43,7 +43,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <%--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>--%>
-    <script src="<c:url value="/js/bootstrap.min.js"/>"></script>
+    <script src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <%--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>--%>
 

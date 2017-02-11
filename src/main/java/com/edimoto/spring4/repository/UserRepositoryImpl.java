@@ -29,15 +29,15 @@ public class UserRepositoryImpl implements UserRepositoryOperations {
         Query query = session.createQuery("select u FROM User u WHERE u.userName = :userName")
                 .setParameter( "userName", userName );
 
-        User result = (User)query.uniqueResult();
-        System.out.println(String.format("result : %s",result));
+        User user = (User)query.uniqueResult();
+        System.out.println(String.format("user : %s",user));
 
+//        CriteriaBuilder builder = session.getCriteriaBuilder();
+//        CriteriaQuery<User> criteria = builder.createQuery(User.class);
+//        criteria.from(User.class);
+//        List<User> users = session.createQuery(criteria).getResultList();
+//        System.out.println(String.format("%s",users));
 
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> criteria = builder.createQuery(User.class);
-        criteria.from(User.class);
-        List<User> users = session.createQuery(criteria).getResultList();
-        System.out.println(String.format("%s",users));
-        return null;
+        return user;
     }
 }
