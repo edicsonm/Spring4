@@ -17,21 +17,21 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><s:message code="spittr.label.admin" /> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <security:authorize url="/spitter/register">
-                            <li role="presentation"><a href="<c:url value="/admin/user/register"/>"><s:message code="spittr.label.register" /></a></li>
-                        </security:authorize>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
+                        <%--<security:authorize url="/spitter/register">--%>
+                            <%--<li role="presentation"><a href="<c:url value="/admin/user/register"/>"><s:message code="spittr.label.register" /></a></li>--%>
+                        <%--</security:authorize>--%>
+                        <%--<li><a href="#">Another action</a></li>--%>
+                        <%--<li><a href="#">Something else here</a></li>--%>
+                        <%--<li role="separator" class="divider"></li>--%>
+                        <%--<li><a href="#">Separated link</a></li>--%>
+                        <%--<li role="separator" class="divider"></li>--%>
                         <li><a href="<c:url value="/admin/user/"/>${userName}"><s:message code="spittr.label.profile"/></a></li>
                     </ul>
                 </li>
             </security:authorize>
 
             <security:authorize access="isAnonymous()">
-                <li role="presentation"><a href="<c:url value="/login"/>"><s:message code="spittr.label.login" ></s:message></a></li>
+                <%--<li role="presentation"><a href="<c:url value="/login"/>"><s:message code="spittr.label.login" ></s:message></a></li>--%>
                 <li role="presentation"><a href="#"><s:message code="spittr.label.about" /></a></li>
                 <li role="presentation"><a href="#"><s:message code="spittr.label.contact" /></a></li>
             </security:authorize>
@@ -43,5 +43,5 @@
         </ul>
 
     </nav>
-    <h3 class="text-muted"><s:message code="spittr.label.siteName" /></h3>
+    <h3 class="text-muted"><s:message code="myApp.siteName" /></h3>
 </div>
