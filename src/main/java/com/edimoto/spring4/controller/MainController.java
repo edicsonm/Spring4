@@ -25,16 +25,16 @@ public class MainController {
 //    @Autowired
 //    MongoOperations mongo;
 
-    @Autowired
-    PersonRepository personRepository;
+//    @Autowired
+//    PersonRepository personRepository;
 
     @RequestMapping(method = RequestMethod.GET)
     public String home() {
 //        System.out.println(String.format("%s", userRepository.findBySSO("edicsonm@gmail.com")));
 //        System.out.println(String.format("%s", userRepositoryTest.findAll()));
 //        System.out.println(String.format("%s", personRepository.findAll()));
-        System.out.println(String.format("%s", personRepository.findByFirstName("Edicson")));
-        System.out.println(String.format("%s", personRepository.findByName("tutorials point")));
+//        System.out.println(String.format("%s", personRepository.findByFirstName("Edicson")));
+//        System.out.println(String.format("%s", personRepository.findByName("tutorials point")));
         return "main";
     }
 

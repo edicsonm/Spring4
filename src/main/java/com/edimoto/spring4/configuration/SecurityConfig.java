@@ -25,7 +25,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.logout()
                 .logoutUrl("/logout")
-                .logoutSuccessUrl("/pepito")
                 .invalidateHttpSession(true)
                 .and()
                 .formLogin()

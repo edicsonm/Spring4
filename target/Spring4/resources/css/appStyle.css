@@ -1,0 +1,16 @@
+div.errors {
+    background-color: #ffcccc;
+    border: 2px solid red;
+}
+
+span.error {
+    color: #a94442;
+}
+
+input.error{
+    border-color: #a94442;
+}
+
+label.error{
+    color: #a94442;
+}

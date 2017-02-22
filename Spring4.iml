@@ -23,8 +23,9 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
         <datasource-mapping>
+          <factory-entry name="HibernateSessionFactory" />
+          <factory-entry name="JPAEntityManagerFactory" />
           <factory-entry name="entityManagerFactory" />
-          <factory-entry name="sessionFactory" />
         </datasource-mapping>
       </configuration>
     </facet>

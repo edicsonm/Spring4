@@ -7,4 +7,5 @@ import com.edimoto.spring4.model.User;
  */
 public interface UserRepositoryOperations {
         User findBySSO(String userName);
+        void saveUser(User user);
 }

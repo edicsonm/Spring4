@@ -1,0 +1,3 @@
+# Skip files in commit
+uploads/
+target/

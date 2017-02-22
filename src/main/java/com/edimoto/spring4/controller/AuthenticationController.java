@@ -1,6 +1,6 @@
 package com.edimoto.spring4.controller;
 
-import com.edimoto.spring4.model.Spitter;
+import com.edimoto.spring4.model.User;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
@@ -20,7 +20,10 @@ public class AuthenticationController {
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String loginPage(Model model){
-        model.addAttribute(new Spitter());
+        User user = new User();
+        user.setUserName("edicsonm@gmail.com");
+        user.setPassword("bigfoot69");
+        model.addAttribute(user);
         return "login";
     }
 

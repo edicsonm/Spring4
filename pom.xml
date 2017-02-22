@@ -180,9 +180,9 @@
                 <version>3.0.0</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <!--<outputDirectory>/Users/edicson/Servers/wildfly-10.1.0.Final/standalone/deployments/</outputDirectory>-->
                     <!--<webappDirectory>/Users/edicson/Servers/apache-tomcat-8.5.11/webapps/Spring4</webappDirectory>-->
                     <outputDirectory>/Users/edicson/Servers/apache-tomcat-8.5.11/webapps/</outputDirectory>
-                    <!--<outputDirectory>/Users/edicson/Servers/wildfly-10.1.0.Final/standalone/deployments/</outputDirectory>-->
                 </configuration>
             </plugin>
         </plugins>
